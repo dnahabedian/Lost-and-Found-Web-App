@@ -1,0 +1,150 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #b3c1d1;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+  align-items: center; 
+}
+
+#img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#title, #search-title {
+  width: 600px;
+  text-align: left;
+  padding: 25px;
+}
+
+#input-cont {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+  align-items: center;
+  
+  width: 600px;
+  height: 600px;
+  background: white;
+  padding: 15px;
+}
+
+#title-input-box, #category-input-box, #desc-input-box, #input-attach {
+  width: 450px;
+  height: 20px;
+  
+  background: #e5e5e5;
+  padding: 5px;
+}
+
+#input-attach {
+  background: white;
+}
+
+#desc-input-box {
+  height: 250px;
+}
+
+
+#imgUpload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 25px;
+  width: 125px;
+  border-radius: 5px;
+  margin-top: 10px;
+  
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+#button-cont {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: flex-end;
+  
+  width: 500px;
+}
+
+#next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 45px;
+  width: 125px;
+  border-radius: 10px;
+  
+  color: white;
+  background: #142a50;
+  cursor: pointer;
+}
+
+
+#search-cont {
+  display: flex;
+  flex-direction: row;
+justify-content: flex-end;  
+  align-items: center;
+cursor: pointer;  
+  width: 600px;
+  height: 40px;
+  background: white;
+}
+
+#search-box {
+  width: 550px;
+  padding-left: 2px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: #142a50;
+  
+}
+
+#choose-file {
+  display: flex;
+  flex-direction: column;
+}
+
+#upload-status {
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.material-icons {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+user-select: none;  
+  transform: rotateY(180deg); /* Help from: https://www.w3schools.com/howto/howto_css_flip_image.asp*/
+}
+
+p {
+  font-size: 35px;
+  font-weight: bold;
+
+  color: #142a50;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#input-title, #category-title, #desc-title, #input-attach, #imgUpload {
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+#button-text {
+  font-size: 130%;
+  color: white;
+}
