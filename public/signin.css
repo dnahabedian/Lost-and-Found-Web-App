@@ -1,0 +1,56 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#solid-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #365c85;
+  width: 50%;
+  height: 100%;
+}
+
+#library-background {
+  display: block;
+  width: 50%;
+  height: 100%; 
+  object-fit: cover;
+  user-select: none;
+}
+
+#login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#google-logo {
+  width: 70px;
+  height: 55px;
+  margin: 10px 5px 10px 10px;
+}
+
+p {
+  color: #142a50;
+  font-size: 150%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px 10px 5px;
+}
+
+#login, #ucd-logo {
+  margin: 20px 0 20px 0;
+  user-select: none;
+}
+
