@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>UC Davis Lost & Found</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/user/time-location.css">
+    <link rel="stylesheet" href="/user/finder/time-location-finder.css">
+    <link rel="stylesheet" href="/user/finder/finder.css">
+    
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/user/finder/time-location-finder.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyQPcU3AAiuD35_FCZwyBuXq7fHH9ERg&callback=initMap" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img id="ucd-logo" src="https://cdn.glitch.com/fc5c5561-7913-48ed-95f1-92413f3968f6%2FLogo.png?v=1590727301395">
+    </h1>
+    <div id="seeker-form">
+      <div class="field-title">Input the found item</div>
+      <div id="time-location-form">
+        <div class="smaller-field-title form-element">Date & Time</div>
+        <div id="date-time-entry" class="form-element">
+          <input type="date" id="date" required>
+          <input type="time" id="time" name="appt" min="00:00" max="24:00" required>
+        </div>
+        <div class="smaller-field-title form-element">Location</div>
+
+        <!-- LOCATION SECTION -->
+        <div id="location-sect">
+          <form autocomplete = "off">
+            <div class="autocomplete">
+              <input id="location-input-box" type="text" name="locations">
+            </div>
+          </form>
+        </div>
+        
+        <div id="map" class="form-element"></div>
+        <div class="form-element">
+          <div id="submit-button">Submit</div>
+        </div>
+      </div>
+      <div class="field-title">Or search for existing requests</div>
+      <div id="item-search">
+        <img id="search-icon" src="https://cdn.glitch.com/fc5c5561-7913-48ed-95f1-92413f3968f6%2Fsearch-solid.svg?v=1590727306514">
+      </div>
+    </div>
+  </body>
+</html>
