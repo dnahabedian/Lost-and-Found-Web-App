@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>UC Davis Lost & Found</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/user/seeker/seeker.css">
+    <link rel="stylesheet" href="/user/seeker/seeker-mapscreen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/user/seeker/seeker-mapscreen.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyQPcU3AAiuD35_FCZwyBuXq7fHH9ERg&callback=initMap" defer></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyQPcU3AAiuD35_FCZwyBuXq7fHH9ERg&libraries=places"> defer</script>
+  </head>
+  <body>
+    <h1 id="img-container">
+      <img id="ucd-logo" src="https://cdn.glitch.com/fc5c5561-7913-48ed-95f1-92413f3968f6%2FLogo.png?v=1590727301395">
+    </h1>
+    
+    
+    <div id="main-cont">
+       <div id="search-title">
+        <p>
+          Search for existing items
+         </p>     
+       </div>
+      
+      <div id="search-cont">
+        <div id="search-box">
+        </div>
+        <i class="material-icons">search</i>
+      </div>
+      
+      <div id="input-cont">
+        
+        <!-- DATE SECTION -->
+        <div id="date-sect">
+          <div id="date-title-sect">
+            <p id="date-title">
+              Date & Time
+            </p>   
+          </div>
+          
+          <div id="date-box-sect">
+            <input type="date" id="date-box1">
+            <input type="time" id="date-box2" name="appt" min="00:00" max="24:00">  
+            <p id="date-box-seperator"> to </p>
+            <input type="date" id="date-box3">
+            <input type="time" id="date-box4" name="appt" min="00:00" max="24:00">  
+          </div> 
+        </div>
+        
+        <!-- CATEGORY SECTION -->
+        <div id="category-sect">
+          <p id="category-title">
+            Category
+          </p>
+          <input list="category-list" id="category-input-box">   
+          <datalist id="category-list">
+            <option value="Clothes"></option>
+            <option value="Electronics"></option>
+            <option value="Accessories"></option>
+            <option value="Personal Items"></option>
+            <option value="Other"></option>
+          </datalist>
+        </div>
+        
+        <!-- LOCATION SECTION -->
+        <div id="location-sect">
+            <p id="location-title">
+            Location
+            </p>
+          <form autocomplete = "off">
+            <div class="autocomplete">
+              <input id="location-input-box" type="text" name="locations">
+            </div>
+          </form>
+        </div>
+        
+        
+        <!-- MAP SECTION -->
+        <div id="map-sect">
+        </div>
+        
+        <div id="button-cont">
+          <div id="search-button"> 
+           <p id="button-text">
+             Search
+           </p>
+          </div> 
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
