@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>UC Davis Lost & Found</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/user/seeker/input-seeker.css">
+    <link rel="stylesheet" href="/user/seeker/seeker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/user/seeker/input-seeker.js" defer></script>
+  </head>
+  
+  
+  <body>
+    <h1 id="img-container">
+      <img id="ucd-logo" src="https://cdn.glitch.com/fc5c5561-7913-48ed-95f1-92413f3968f6%2FLogo.png?v=1590727301395">
+    </h1>
+    
+    <div id="main-container">
+      <div id="title">
+        <p>
+          Input the lost item
+        </p>
+      </div>
+
+      <div id="input-cont">
+        <div id="title-sect">
+          <p id="input-title">
+            Title
+          </p>
+          <div id="title-input-box" contenteditable="true"></div>
+        </div>
+
+        <div id="category-sect">
+          <p id="category-title">
+            Category
+          </p>
+          <input list="category-list" id="category-input-box">   
+          <datalist id="category-list">
+            <option value="Clothes"></option>
+            <option value="Electronics"></option>
+            <option value="Accessories"></option>
+            <option value="Personal Items"></option>
+            <option value="Other"></option>
+          </datalist>
+        </div>
+
+        <div id="desc-sect">
+          <p id="desc-title">
+            Description
+          </p>
+          <div id="desc-input-box" contenteditable="true"></div></div>
+
+        <div id="photo-sect">
+           <p id="input-attach">
+          Attach a photo (optional)
+          </p>  
+          <div id="choose-file">
+            <input id="imgUpload" type="file" accept="image/*"/> 
+            <div id="upload-status"></div>
+          </div>
+        </div>
+        
+        <div id="button-cont">
+          <div id="next-button"> 
+           <p id="button-text">
+             Next
+           </p>
+          </div> 
+        </div>
+
+      </div>
+
+      <div id="search-title">
+          <p>
+            Or search for existing items
+          </p>
+      </div>
+
+
+      <div id="search-cont">
+       
+        <img class="material-icons" src="https://cdn.glitch.com/fc5c5561-7913-48ed-95f1-92413f3968f6%2Fsearch-solid.svg?v=1590727306514">
+      </div>
+
+    </div>
+  </body>
+</html>
