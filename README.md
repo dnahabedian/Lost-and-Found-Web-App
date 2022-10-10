@@ -23,3 +23,5 @@ Authorship
 Based on Jared Hanson's passport-google-oauth20 exmaple.
 
 Original Glitch App Made by Fog Creek mission-control-login
+
+#Originally made on glitch.com
