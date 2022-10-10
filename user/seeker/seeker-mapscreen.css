@@ -1,0 +1,219 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #b3c1d1;
+}
+
+#ucd-logo {
+  margin: 50px 70px 0 0;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#main-cont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+  align-items: center; 
+}
+
+#img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#search-title {
+  width: 600px;
+  text-align: left;
+  padding: 25px;
+}
+
+#search-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+  width: 700px;
+  height: 40px;
+  background: white;
+  
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#search-box {
+  width: 600px;
+  padding-left: 2px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: #142a50; 
+}
+
+.material-icons {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  
+  transform: rotateY(180deg); /* Help from: https://www.w3schools.com/howto/howto_css_flip_image.asp*/
+}
+
+#input-cont {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+  align-items: center;
+  
+  width: 700px;
+  height: 80%;
+  background: white;
+}
+
+#date-sect {
+  display: flex;
+  flex-direction: column;
+  
+  height: 75px;
+  width: 80%;
+  
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+#date-title-sect {
+  display: flex;
+  flex-direction: row;
+  
+  width: 500px;
+}
+
+#date-box-sect {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#date-box1, #date-box3 {
+  width: 125px;
+  height: 20px;
+  
+  background: #e5e5e5;
+  padding: 5px;
+}
+
+#date-box2, #date-box4 {
+  width: 100px;
+  height: 20px;
+  
+  background: #e5e5e5;
+  padding: 5px;
+}
+
+#map-sect {
+  height: 300px;
+  width: 80%;
+  
+}
+
+#button-cont {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
+  
+  width: 85%;
+}
+
+#search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 45px;
+  width: 125px;
+  border-radius: 10px;
+  
+  color: white;
+  background: #142a50;
+  cursor: pointer;
+  
+  margin-bottom: 10px;
+}
+
+#category-input-box, #location-input-box {
+  width: 100%;
+  height: 20px;
+  
+  background: #e5e5e5;
+  padding: 5px;
+  
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 35px;
+  font-weight: bold;
+
+  color: #142a50;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#date-title, #date-box-seperator, #category-title, #location-title {
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+#date-box-seperator {
+  padding: 0 10px 5px 10px;
+}
+
+#category-sect {
+  width: 80%;
+}
+
+#button-text {
+  font-size: 130%;
+  color: white;
+}
+
+#location-sect {
+  width: 80%;
+}
+
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
